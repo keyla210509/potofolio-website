@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+:root{
+    --white: #FFF;
+    --black: #000;
+    --primary-grey: #424242;
+    --secondary-grey: #F5F6F8;
+    --primary-pink: #FF4967;
+    --secondary-pink: #FECED6;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* ---General Styling--- */
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+li{
+    list-style: none;
+}
+h1, h2, h4{
+    color: var(--black);
+}
+h1{
+    font-size: 2.6rem;
+    font-family: "Rammetto One", sans-serif;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.3rem;
+    color: var(--primary-pink);
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1rem;
+    color: var(--primary-grey);
+    margin: 1rem 0 2rem 0;
+    max-width: 80%;
+}
+.para{
+    max-width: 100%;
+}
+.primary-btn{
+    border: .1rem solid var(--primary-pink);
+    background: var(--primary-pink);
+    font-size: 1rem;
+    border-radius: 5rem;
+    color: var(--white);
+    padding: .6rem 1.5rem;
+}
+[data-type="inverted-btn"]{
+    background: transparent;
+    color: var(--primary-pink);
+}
+[data-type="white-btn"]{
+    background: var(--white);
+    border: none;
+    color: var(--primary-pink);
+}
+.primary-btn:hover{
+    filter: grayscale(1);
+}
+.bg-white{
+    background: var(--white);
+}
+.bg-black{
+    background: var(--black);
+}
+.bg.light-pink{
+    background: var(--secondary-pink);
+}
+.bg-pink{
+    background: var(--primary-pink);
+}
+.bg-grey{
+    background: var(--secondary-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fill-white{
+    color: var(--white);
+}
+.fill-light-pink{
+    color: var(--secondary-pink);
+}
+.fill-pink{
+    color: var(--primary-pink);
+}
+.section{
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0 2rem;
+}
+.row-container, .column-contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-container{
+    gap: 7rem;
+}
+.column-contianer{
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+.content{
+    max-width: 50%;
+}
+img{
+    height: 100%;
+    display: inline-block;
+}
+.fa-solid{
+    margin-right: 1rem;
+}
+
+
+/* ---Navbar--- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 13vh;
+    margin: auto;
+    padding: 0 2rem;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.fa-bars{
+    font-size: 2rem;
+}
+.Hamburger{
+    display: none;
+}
+.active,.navlist li .navlinks:hover{
+    color: var(--primary-pink)
+}
+.logo{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--primary-pink);
+    border: .1rem solid var(--primary-pink);
+    padding: .3rem;
+}
+
+.hero-section{
+    height: calc(100vh - 13vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actions{
+    display: flex;
+    gap: 1.5rem;
+}
+.image-container{
+    height: 75vh;
+    width: 50rem;
+    background: linear-gradient(var(--secondary-pink), var(--secondary-grey));
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    transform: scaleX(-1);
+}
+.image-container img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+
+
+/* ---Skill Section--- */
+.skill-level{
+    background: var(---white);
+    width: 100%;
+    height: .7rem;
+    margin-top: .7rem;
+    border-radius: 3rem;
+    position: relative;
+
+}
+section.bg-light-pink {
+    background-color: var(--secondary-pink); /* Use the defined variable for pink */
+    color: var(--black); /* Set text color to black for contrast */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+.skill-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6rem;
+    grid-row-gap: 2rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar{
+    background-color: var(--primary-pink);
+    position: absolute;
+    inset: 0;
+    border-radius: 3rem;
+}
+.html{
+    width: 80%;
+}
+.bootstrap{
+    width: 85%;
+}
+.css{
+    width: 78%;
+}
+.react{
+    width: 78%;
+}
+.javascript{
+    width: 66%;
+}
+.wordpress{
+    width: 95%;
+}
+
+
+/* ---AboutMe Section--- */
+[data-type="inverted-img"]{
+    transform: scaleX(1);
+}
+.detail{
+    margin-bottom: 1.6rem;
+}
+
+.information .detail {
+    line-height: 1.5;
+}
+.interest {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.interest li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--primary-grey);
+    text-align: right;
+}
+
+.interest li i {
+    margin-right: 1rem; /* jarak icon sama teksnya */
+    font-size: 1.5rem; /* kalau gambarnya kegedean/kekecilan ubah-ubah aja */
+    color: var(--primary-pink);
+}
+
+/* ---Portfolio Section--- */
+.contentt {
+    justify-content: center; 
+    align-items: center;
+    height: auto; 
+    margin: 2rem 0; 
+    text-align: center;
+}
+.grid-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.portfolio-card {
+    margin: 0 auto;
+    padding: 0; 
+    width: 25rem;
+    aspect-ratio: 16 / 9; 
+    background-color: #ffe4e1;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card:nth-child(1) {
+    background-image: url("assets/proyek1.png");
+}
+.portfolio-card:nth-child(2) {
+    background-image: url("assets/project.png");
+}
+.portfolio-card:nth-child(3) {
+    background-image: url("assets/proyek3.png");
+}
+.portfolio-card:nth-child(4) {
+    background-image: url("assets/proyek4.png");
+}
+.portfolio-card:nth-child(5) {
+    background-image: url("assets/proyek5.png");
+}
+.portfolio-card:nth-child(6) {
+    background-image: url("assets/proyek6.png");
+}
+.portfolio-card::before {
+    content:"";
+    background-color: var(--black);
+    position: absolute;
+    inset:0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.portfolio-card:hover::before {
+    opacity:.8;
+
+}
+.demo {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top : -20%;
+    transition: top .3s ease-in-out;
+}
+.portfolio-card:hover .demo {
+    top: 50%;
+}
+/* ---Sertificate Section--- */
+.bg-pink {
+    background-color: #ffe4e1;
+    padding: 2rem 0;
+}
+.content-certificates {
+    justify-content: center; 
+    align-items: center;
+    margin: 2rem 0; 
+    text-align: center;
+    color: #333;
+}
+.grid-card-container-certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center;
+}
+.certificate-card {
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    background-color: #ffe4e1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certificate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.certificate-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+.certificate-card:hover .certificate-overlay {
+    opacity: 1;
+}
+.certificate-overlay h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.certificate-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.view-cert {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.view-cert:hover {
+    background-color: #d9534f;
+}
+
+
+/*-- ---ContactUS Section--- --*/
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+}
+h2 {
+    font-size: 1.2em;
+    color: #ff4d4d;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.form-group {
+    margin: 15px 0;
+}
+.form-control {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #e9e6e6;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #e60000;
+    background: #e03d74; 
+}
+
+/* ---Footer section--- */
+/* ---Footer section--- */
+.footer-section {
+    border-top-left-radius: 20px; /* Radius untuk pojok kiri atas */
+    border-top-right-radius: 20px; /* Radius untuk pojok kanan atas */
+    margin-top: 2rem; /* Margin atas */
+    padding: 1rem 0; /* Padding atas dan bawah */
+    background-color: #ffc0cb; /* Pink background */
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+
+
+/* Kontainer Footer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Brand Footer */
+.footer-brand {
+    text-align: left;
+    margin-bottom: 0.5rem; /* Perkecil margin bawah */
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem; /* Perkecil ukuran font */
+    color: pink; /* Warna merah muda */
+    margin: 0;
+}
+
+/* Informasi Footer */
+.footer-info {
+    text-align:start;
+    font-size: 1rem; 
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-info i {
+    margin-right: 0.3rem;
+    color: #ff4d4d;
+}
+
+.footer-info a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
